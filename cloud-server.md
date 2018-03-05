@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Cloud Server
+desc: How to set up your own cloud server.
 ---
 
 # Cloud Server Setup

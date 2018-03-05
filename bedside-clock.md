@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Bedside Clock
+desc: A bedside clock application written in ReactJS and React Native
+      that can be dimmed to almost black to avoid adding ambient light
+      while sleeping.
 ---
 
 # Bedside Clock App
