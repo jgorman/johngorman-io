@@ -9,7 +9,7 @@ desc: A technology playgound for fun and learning. Currently an exploration
 
 I am taking some time to learn ReactJS, React Native and related technologies and this is my place to try things out!
 
-## Bedside Clock
+## Darkest Night Clock
 
 I wrote the same exact night time clock app in both React.js and in React Native so that both the similarities and the differences between the two environments are clear.
 
