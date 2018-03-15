@@ -1,11 +1,28 @@
 
-    <div class="row" style="background-color:pink">
-      <div class="col text-left">
-        <a href="/">
-        <span style="color:blue">johngorman</span>.<span style="color:red">io</span>
-        </a>
-      </div>
-      <div class="col text-right text-muted">
-        A Technology Playground
-      </div>
-    </div>
+<div>
+
+  <div id="particles-js"/>
+
+  <div id="logo">
+      <img src="/images/jg-logo.svg" height="50px" width="50px"/>
+      <a href="/">
+      <span style="color:blue">johngorman</span
+      ><span style="color:black">.</span
+      ><span style="color:red">io</span>
+      </a>
+  </div>
+
+  <div id="playground">
+    <span>A technology playground</span>
+  </div>
+
+</div>
+
+<div style="height: 10px"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" crossorigin="anonymous"></script>
+<script>
+particlesJS.load('particles-js', 'assets/particles.json', function() {
+ console.log('callback - particles.js config loaded');
+});
+</script>
