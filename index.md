@@ -5,9 +5,41 @@ desc: A technology playgound for fun and learning. Currently an exploration
       of React and Ruby on Rails.
 ---
 
-# Menu
+# Projects
 
-I am taking some time to learn ReactJS, React Native and related technologies and this is my place to try things out!
+I am learning ReactJS, React Native and related technologies and
+this is my place to try things out!
+
+## WiFi Watch
+
+I use this all the time when at coffee shops, airports and at home
+to keep an eye on my network connection quality.
+
+When web page loading sucks, is it a problem with their site or
+do I have a network issue on my end? If it is my problem is it
+due to slowness or are there a lot of dropped packets?
+How long has this been going on and is it getting worse? If the
+network is completely failing, exactly how long has it been
+inaccessible?
+
+I keep wifi-watch running in a terminal tab and I can quickly look
+at the tab to answer all of these questions at a glance.
+
+<span style="color:red;">This should be red.</span>
+<div id="wifi-watch"/>
+
+<script>
+    /*
+  alert("A");
+  window.onload = function() {
+    $.get("http://localhost:3000/summary", function(data, status) {
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  };
+  alert("B");
+  */
+</script>
+
 
 ## Darkest Night Clock
 
