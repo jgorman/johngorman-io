@@ -4,6 +4,7 @@ title: Darkest Night Clock
 desc: A very dimmable night clock application written in both
       ReactJS and React Native that can be dimmed to almost black
       to avoid adding ambient light while sleeping.
+permalink: /darkest-night-clock/
 ---
 
 # Darkest Night Clock App
