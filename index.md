@@ -1,8 +1,7 @@
 ---
 layout: page
 title: johngorman.io
-desc: A technology playgound for fun and learning. Currently an exploration
-      of React and Ruby on Rails.
+desc: A technology playgound for fun and learning.
 ---
 
 # Projects
