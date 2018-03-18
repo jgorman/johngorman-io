@@ -24,21 +24,15 @@ inaccessible?
 I keep wifi-watch running in a terminal tab and I can quickly look
 at the tab to answer all of these questions at a glance.
 
-<span style="color:red;">This should be red.</span>
-<div id="wifi-watch"/>
+<pre>
+$ wifi-watch
+</pre>
 
-<script>
-    /*
-  alert("A");
-  window.onload = function() {
-    $.get("http://localhost:3000/summary", function(data, status) {
-      alert("Data: " + data + "\nStatus: " + status);
-    });
-  };
-  alert("B");
-  */
-</script>
+{% include wifi-console.html %}
 
+Of course this will be perfect output! It is running on my
+personal playground server at linode.com. If you run this
+at home it will be more meaningful.
 
 ## Darkest Night Clock
 
