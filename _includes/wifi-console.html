@@ -3,7 +3,7 @@
 
   <script>
     function wifi_console() {
-      $.get("https://johngorman.io/summary?lines=5&header=1",
+      $.get("https://johngorman.io/wifi-service/summary?lines=5&header=1",
         function(data, status) {
           document.getElementById("wifi-console").innerHTML = data;
         });
