@@ -18,7 +18,7 @@ permalink: /business-card/
 #logo-jgio
 {
   position: absolute;
-  top: 30px;
+  top: 15px;
   left: 25px;
   font-size: 50px;
 }
@@ -29,24 +29,24 @@ permalink: /business-card/
   width: 50px;
 }
 
-#contact
+.text
 {
   position: absolute;
-  top: 100px;
-  left: 25px;
   font-size: 30px;
   color: #ffd700;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
-#skills
+.contact
 {
-  position: absolute;
+  bottom: 10px;
+  left: 25px;
+}
+
+.skills
+{
   bottom: 10px;
   right: 25px;
-  font-size: 30px;
-  color: #ffd700;
-  opacity: 0.7;
 }
 
 </style>
@@ -60,14 +60,14 @@ permalink: /business-card/
     ><span style="color:red">io</span>
   </div>
 
-  <div id="contact">
+  <div class="text contact">
     John Gorman<br/>
     john@johngorman.io<br/>
     978-880-2527<br/>
     New York NY
   </div>
 
-  <div id="skills">
+  <div class="text skills">
     Applications Done Right<br/>
     Requirements Analysis<br/>
     Database Design<br/>
