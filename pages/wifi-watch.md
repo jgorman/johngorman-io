@@ -9,3 +9,8 @@ permalink: /wifi-watch/
 
 Monitor your network quality in real time.
 
+<pre>
+$ wifi-watch --count 3600
+</pre>
+
+{% include wifi-console.html %}

@@ -25,7 +25,7 @@ I keep wifi-watch running in a terminal tab and I can quickly look
 at the tab to answer all of these questions at a glance.
 
 <pre>
-$ wifi-watch
+$ wifi-watch --count 3600
 </pre>
 
 {% include wifi-console.html %}
