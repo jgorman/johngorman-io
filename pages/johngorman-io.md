@@ -2,6 +2,7 @@
 layout: page
 title: johngorman.io
 desc: A technology playgound for fun and learning.
+permalink: /
 ---
 
 # Projects
