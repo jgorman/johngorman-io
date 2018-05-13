@@ -18,10 +18,10 @@ Check out the web app version __[Live demo](/darkest-night-clock/run)__
 I have submitted this to the Apple App Store and I am awaiting
 their response.
 
-Install on your [Android Phone](/darkest-night-clock.apk).
+Install on your __[Android Phone](/darkest-night-clock.apk)__.
 I haven't submitted this to the Google Play Store because it
 still shows the white Android __[Back Home Running]__ nav bar
-at the bottom. It is not yet dark enough.
+at the bottom. It is not dark enough yet.
 
 ## Controls
 
