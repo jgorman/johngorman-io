@@ -49,8 +49,8 @@ permalink: /business-card/
   <div class="text contact">
     John Gorman<br/>
     john@johngorman.io<br/>
-    978-880-2527<br/>
-    New York NY
+    617-804-0412<br/>
+    Boston
   </div>
 
   <div class="text skills">
