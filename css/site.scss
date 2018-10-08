@@ -2,19 +2,38 @@
 ---
 
 /*
- * Banner _includes/banner.html style.
- *
+ * Variables.
  */
 
 $particles-background-color: #b61924;
+
+/*
+ * General site settings.
+ */
+
+h1, h2, h3, h4, h5 {
+  text-align: center;
+  color: #aaaaaa;
+}
+
+#nav-bar
+{
+  background-color:#dddddd;
+}
+
+/*
+ * Banner section.
+ */
 
 /* The banner particles canvas container. */
 #particles-js
 {
   background-color: $particles-background-color;
+  position: relative;
   height: 150px;
   width: 100%;
-  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Wide screen top banner. */
@@ -66,18 +85,4 @@ $particles-background-color: #b61924;
     right: 10px;
     font-size: 25px;
   }
-}
-
-#nav-bar
-{
-  background-color:#dddddd;
-}
-
-/*
- * Generic style.
- */
-
-h1, h2, h3, h4, h5 {
-  text-align: center;
-  color: #aaaaaa;
 }

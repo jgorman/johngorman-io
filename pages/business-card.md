@@ -43,10 +43,7 @@ permalink: /business-card/
 <div id="particles-js">
 
   <div id="logo-jgio">
-    <img id="logo" src="/images/jg-logo.svg"/>
-    <span style="color:blue">johngorman</span
-    ><span style="color:black">.</span
-    ><span style="color:red">io</span>
+    {% include logo-name.html %}
   </div>
 
   <div class="text contact">
