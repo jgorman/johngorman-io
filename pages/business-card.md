@@ -42,9 +42,7 @@ permalink: /business-card/
 
 <div id="particles-js">
 
-  <div id="logo-jgio">
-    {% include logo-name.html %}
-  </div>
+  {% include logo-jgio.html %}
 
   <div class="text contact">
     John Gorman<br/>
