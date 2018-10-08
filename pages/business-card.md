@@ -9,24 +9,13 @@ permalink: /business-card/
 
 #particles-js
 {
-  background-color: #b61924;
   width: 700px;
   height: 400px;
-  position: relative;
 }
 
 #logo-jgio
 {
-  position: absolute;
   top: 15px;
-  left: 25px;
-  font-size: 50px;
-}
-
-#logo
-{
-  height: 50px;
-  width: 50px;
 }
 
 .text
