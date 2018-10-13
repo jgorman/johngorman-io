@@ -47,8 +47,8 @@ permalink: /business-card/
   <div class="text contact">
     John Gorman<br/>
     john@johngorman.io<br/>
-    617-804-0412<br/>
-    Boston
+    US +1-617-804-0412<br/>
+    CA +1-902-222-2777
   </div>
 
   <div class="text skills">
