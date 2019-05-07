@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Attach Video
+title: Attach Video Call
 desc: Attach video call.
-permalink: /attach-video/
+permalink: /attach-videocall/
 ---
 
-# Attach Video
+# Attach Video Call
 
 <div style="height: 60vh"
   class="attach-videocall"
