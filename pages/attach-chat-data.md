@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Attach Chat
+title: Attach Chat Data
 desc: Attach chat room.
-permalink: /attach-chat/
+permalink: /attach-chat-data/
 ---
 
-# Attach Chat
+# Attach Chat Data
 
 {% capture text-capture %}
 ```html
