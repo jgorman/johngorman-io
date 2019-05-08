@@ -15,11 +15,10 @@ permalink: /attach-chat-setmeta/
 
 <script>
   function setMeta(name, value) {
-    var head = document.getElementsByTagName('head')[0];
     var meta = document.createElement('meta');
     meta.setAttribute('property', name);
     meta.content = value;
-    head.appendChild(meta);
+    document.head.appendChild(meta);
   }
   setMeta('attach:api-key', 'dev_web_SoVksz30pxAMPFcT_23U9BguSSYztLHlE');
   setMeta('attach:room:url', 'https://johngorman.io');
@@ -45,11 +44,10 @@ permalink: /attach-chat-setmeta/
 
 <script>
   function setMeta(name, value) {
-    var head = document.getElementsByTagName('head')[0];
     var meta = document.createElement('meta');
     meta.setAttribute('property', name);
     meta.content = value;
-    head.appendChild(meta);
+    document.head.appendChild(meta);
   }
   setMeta('attach:api-key', 'dev_web_SoVksz30pxAMPFcT_23U9BguSSYztLHlE');
   setMeta('attach:room:url', 'https://johngorman.io');
