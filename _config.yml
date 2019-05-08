@@ -2,7 +2,7 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 
-exclude: [ "README.md" ]
+exclude: [ "README.md", "runbuild" ]
 highlighter: rouge
 
 title: johngorman.io
