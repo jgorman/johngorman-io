@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Attach Chat Set Meta
+title: Attach Chat setMeta
 desc: Attach chat room.
 permalink: /attach-chat-setmeta/
 ---
 
-# Attach Chat Set Meta
+# Attach Chat setMeta
 
 {% capture text-capture %}
 ```html
