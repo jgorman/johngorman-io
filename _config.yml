@@ -3,15 +3,29 @@
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [ "README.md" ]
-highlighter: pygments
+highlighter: rouge
 
-# Themes are encouraged to use these universal variables 
-# so be sure to set them if your theme uses them.
-#
-title : johngorman.io
+title: johngorman.io
 tagline: A Technology Playground
-author :
-  name : John Gorman
-  email : john@johngorman.io
-  github : jgorman
-  twitter : johngorman2
+author: John Gorman
+email: john@johngorman.io
+twitter_username: johngorman2
+github_username: jgorman
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

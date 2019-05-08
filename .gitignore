@@ -3,5 +3,7 @@
 # production
 /_site
 
+/.sass-cache
+
 # misc
 .DS_Store
