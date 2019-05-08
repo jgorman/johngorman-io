@@ -20,7 +20,7 @@ permalink: /attach-chat-setmeta/
     meta.content = value;
     document.head.appendChild(meta);
   }
-  setMeta('attach:api-key', 'dev_web_SoVksz30pxAMPFcT_23U9BguSSYztLHlE');
+  setMeta('attach:api-key', 'prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A');
   setMeta('attach:room:url', 'https://johngorman.io');
   setMeta('attach:chat:viewer-background-color', '#20B2AA');
   setMeta('attach:chat:editor-background-color', 'orangeRed');
@@ -49,7 +49,8 @@ permalink: /attach-chat-setmeta/
     meta.content = value;
     document.head.appendChild(meta);
   }
-  setMeta('attach:api-key', 'dev_web_SoVksz30pxAMPFcT_23U9BguSSYztLHlE');
+  //setMeta('attach:api-key', 'dev_web_SoVksz30pxAMPFcT_23U9BguSSYztLHlE');
+  setMeta('attach:api-key', 'prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A');
   setMeta('attach:room:url', 'https://johngorman.io');
   setMeta('attach:chat:viewer-background-color', '#20B2AA');
   setMeta('attach:chat:editor-background-color', 'orangeRed');

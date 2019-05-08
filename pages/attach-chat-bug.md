@@ -24,8 +24,8 @@ The workaround is to wrap the chat div in a taller div.
 
   <div style="height: 120vh"
     class="attach-chat"
-    data-api-key="dev_web_SoVksz30pxAMPFcT_23U9BguSSYztLHlE"
-    Xdata-api-key="prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A"
+    Xdata-api-key="dev_web_SoVksz30pxAMPFcT_23U9BguSSYztLHlE"
+    data-api-key="prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A"
     data-room:url="https://johngorman.io"
     data-chat:viewer-background-color="#20B2AA"
     data-chat:editor-background-color="orangeRed"

@@ -17,13 +17,13 @@ Currently running the first option: `&attach:`.
   <div style="height: 60vh" class="attach-chat" />
 </div>
 
-<script src="https://video.attach.live/v1#attach:api-key=dev_web_SoVksz30pxAMPFcT_23U9BguSSYztLHlE&attach:room:url=https://johngorman.io" defer></script>
+<script src="https://video.attach.live/v1#attach:api-key=prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A&attach:room:url=https://johngorman.io" defer></script>
 
-<script src="https://video.attach.live/v1#attach:api-key=dev_web_SoVksz30pxAMPFcT_23U9BguSSYztLHlE#attach:room:url=https://johngorman.io" defer></script>
+<script src="https://video.attach.live/v1#attach:api-key=prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A#attach:room:url=https://johngorman.io" defer></script>
 
-<script src="https://video.attach.live/v1#api-key=dev_web_SoVksz30pxAMPFcT_23U9BguSSYztLHlE&room:url=https://johngorman.io" defer></script>
+<script src="https://video.attach.live/v1#api-key=prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A&room:url=https://johngorman.io" defer></script>
 
-<script src="https://video.attach.live/v1#api-key=dev_web_SoVksz30pxAMPFcT_23U9BguSSYztLHlE#room:url=https://johngorman.io" defer></script>
+<script src="https://video.attach.live/v1#api-key=prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A#room:url=https://johngorman.io" defer></script>
 ```
 {% endcapture %}
 
@@ -36,4 +36,4 @@ Currently running the first option: `&attach:`.
   <div style="height: 60vh" class="attach-chat" />
 </div>
 
-<script src="https://video.attach.live/v1#attach:api-key=dev_web_SoVksz30pxAMPFcT_23U9BguSSYztLHlE&attach:room:url=https://johngorman.io" defer></script>
+<script src="https://video.attach.live/v1#attach:api-key=prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A&attach:room:url=https://johngorman.io" defer></script>

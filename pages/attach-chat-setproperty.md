@@ -16,7 +16,7 @@ permalink: /attach-chat-setproperty/
 <script src="https://video.attach.live/v1"></script>
 
 <script>
-  attachSdk.setProperty('attach:api-key', 'dev_web_SoVksz30pxAMPFcT_23U9BguSSYztLHlE');
+  attachSdk.setProperty('attach:api-key', 'prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A');
   attachSdk.setProperty('attach:room:url', 'https://johngorman.io');
   attachSdk.setProperty('attach:chat:viewer-background-color', '#20B2AA');
   attachSdk.setProperty('attach:chat:editor-background-color', 'orangeRed');
@@ -39,8 +39,8 @@ permalink: /attach-chat-setproperty/
 <script src="https://video.attach.live/v1"></script>
 
 <script>
-  attachSdk.setProperty('attach:api-key', 'dev_web_SoVksz30pxAMPFcT_23U9BguSSYztLHlE');
-  //attachSdk.setProperty('attach:api-key', 'prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A');
+  //attachSdk.setProperty('attach:api-key', 'dev_web_SoVksz30pxAMPFcT_23U9BguSSYztLHlE');
+  attachSdk.setProperty('attach:api-key', 'prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A');
   attachSdk.setProperty('attach:room:url', 'https://johngorman.io');
   attachSdk.setProperty('attach:chat:viewer-background-color', '#20B2AA');
   attachSdk.setProperty('attach:chat:editor-background-color', 'orangeRed');
