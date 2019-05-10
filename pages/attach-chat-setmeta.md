@@ -4,14 +4,19 @@ title: Attach Chat setMeta
 desc: Attach chat room.
 permalink: /attach-chat-setmeta/
 ---
+{% include env.html %}
 
-# Attach Chat setMeta
+# {{ page.title }}
+
+This is the original `setMeta()` example.
 
 {% capture text-capture %}
 ```html
 <div style="height: 65vh">
   <div style="height: 60vh" class="attach-chat" />
 </div>
+
+<script src="{{sdk_url}}"></script>
 
 <script>
   function setMeta(name, value) {
@@ -20,16 +25,14 @@ permalink: /attach-chat-setmeta/
     meta.content = value;
     document.head.appendChild(meta);
   }
-  setMeta('attach:api-key', 'prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A');
-  setMeta('attach:room:url', 'https://johngorman.io');
+  setMeta('attach:api-key', '{{api_key}}');
+  setMeta('attach:room:url', '{{room_url}}');
   setMeta('attach:chat:viewer-background-color', '#20B2AA');
   setMeta('attach:chat:editor-background-color', 'orangeRed');
   setMeta('attach:participants:avatar-border-radius', 'square');
   setMeta('attach:user:username', 'Charlotte');
   setMeta('attach:user:avatar', 'https://avatars.attach.live/avatar11.png');
 </script>
-
-<script src="https://video.attach.live/v1" defer></script>
 ```
 {% endcapture %}
 
@@ -42,6 +45,8 @@ permalink: /attach-chat-setmeta/
   <div style="height: 60vh" class="attach-chat" />
 </div>
 
+<script src="{{sdk_url}}"></script>
+
 <script>
   function setMeta(name, value) {
     var meta = document.createElement('meta');
@@ -49,14 +54,11 @@ permalink: /attach-chat-setmeta/
     meta.content = value;
     document.head.appendChild(meta);
   }
-  //setMeta('attach:api-key', 'dev_web_SoVksz30pxAMPFcT_23U9BguSSYztLHlE');
-  setMeta('attach:api-key', 'prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A');
-  setMeta('attach:room:url', 'https://johngorman.io');
+  setMeta('attach:api-key', '{{api_key}}');
+  setMeta('attach:room:url', '{{room_url}}');
   setMeta('attach:chat:viewer-background-color', '#20B2AA');
   setMeta('attach:chat:editor-background-color', 'orangeRed');
   setMeta('attach:participants:avatar-border-radius', 'square');
   setMeta('attach:user:username', 'Charlotte');
   setMeta('attach:user:avatar', 'https://avatars.attach.live/avatar11.png');
 </script>
-
-<script src="https://video.attach.live/v1" defer></script>

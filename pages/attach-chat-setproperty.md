@@ -4,8 +4,15 @@ title: Attach Chat setProperty
 desc: Attach chat room.
 permalink: /attach-chat-setproperty/
 ---
+{% include env.html %}
 
-# Attach Chat setProperty
+# {{ page.title }}
+
+The `setProperty()` function cannot currently set the `api-key` property.
+
+The `room:url` property seems to be set, but it emits an error message.
+
+This example works around this using the `setMeta()` method.
 
 {% capture text-capture %}
 ```html
@@ -13,11 +20,18 @@ permalink: /attach-chat-setproperty/
   <div style="height: 60vh" class="attach-chat" />
 </div>
 
-<script src="https://video.attach.live/v1"></script>
+<script src="{{sdk_url}}"></script>
 
 <script>
-  attachSdk.setProperty('attach:api-key', 'prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A');
-  attachSdk.setProperty('attach:room:url', 'https://johngorman.io');
+  function setMeta(name, value) {
+    var meta = document.createElement('meta');
+    meta.setAttribute('property', name);
+    meta.content = value;
+    document.head.appendChild(meta);
+  }
+  setMeta('attach:api-key', '{{api_key}}');
+  setMeta('attach:room:url', '{{room_url}}');
+
   attachSdk.setProperty('attach:chat:viewer-background-color', '#20B2AA');
   attachSdk.setProperty('attach:chat:editor-background-color', 'orangeRed');
   attachSdk.setProperty('attach:participants:avatar-border-radius', 'square');
@@ -36,12 +50,18 @@ permalink: /attach-chat-setproperty/
   <div style="height: 60vh" class="attach-chat" />
 </div>
 
-<script src="https://video.attach.live/v1"></script>
+<script src="{{sdk_url}}"></script>
 
 <script>
-  //attachSdk.setProperty('attach:api-key', 'dev_web_SoVksz30pxAMPFcT_23U9BguSSYztLHlE');
-  attachSdk.setProperty('attach:api-key', 'prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A');
-  attachSdk.setProperty('attach:room:url', 'https://johngorman.io');
+  function setMeta(name, value) {
+    var meta = document.createElement('meta');
+    meta.setAttribute('property', name);
+    meta.content = value;
+    document.head.appendChild(meta);
+  }
+  setMeta('attach:api-key', '{{api_key}}');
+  setMeta('attach:room:url', '{{room_url}}');
+
   attachSdk.setProperty('attach:chat:viewer-background-color', '#20B2AA');
   attachSdk.setProperty('attach:chat:editor-background-color', 'orangeRed');
   attachSdk.setProperty('attach:participants:avatar-border-radius', 'square');

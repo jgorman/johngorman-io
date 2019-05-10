@@ -4,12 +4,9 @@ title: Attach Chat Query
 desc: Attach chat room.
 permalink: /attach-chat-query/
 ---
+{% include env.html env="dev" %}
 
-# Attach Chat Query
-
-None of these combinations of `attach:` and [#&] worked.
-
-Currently running the first option: `&attach:`.
+# {{ page.title }}
 
 {% capture text-capture %}
 ```html
@@ -17,13 +14,7 @@ Currently running the first option: `&attach:`.
   <div style="height: 60vh" class="attach-chat" />
 </div>
 
-<script src="https://video.attach.live/v1#attach:api-key=prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A&attach:room:url=https://johngorman.io" defer></script>
-
-<script src="https://video.attach.live/v1#attach:api-key=prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A#attach:room:url=https://johngorman.io" defer></script>
-
-<script src="https://video.attach.live/v1#api-key=prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A&room:url=https://johngorman.io" defer></script>
-
-<script src="https://video.attach.live/v1#api-key=prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A#room:url=https://johngorman.io" defer></script>
+<script src="{{sdk_url}}#api-key={{api_key}}&room:url={{room_url}}&chat:viewer-background-color=#20B2AA&chat:editor-background-color=orangeRed&participants:avatar-border-radius=square&user:username=Charlotte&user:avatar=https://avatars.attach.live/avatar11.png"></script>
 ```
 {% endcapture %}
 
@@ -36,4 +27,4 @@ Currently running the first option: `&attach:`.
   <div style="height: 60vh" class="attach-chat" />
 </div>
 
-<script src="https://video.attach.live/v1#attach:api-key=prod_web_BF7EISmegubLJ2d5mWSQynTDF1WjmW0A&attach:room:url=https://johngorman.io" defer></script>
+<script src="{{sdk_url}}#api-key={{api_key}}&room:url={{room_url}}&chat:viewer-background-color=#20B2AA&chat:editor-background-color=orangeRed&participants:avatar-border-radius=square&user:username=Charlotte&user:avatar=https://avatars.attach.live/avatar11.png"></script>
