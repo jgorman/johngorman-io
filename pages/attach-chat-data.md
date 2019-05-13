@@ -9,10 +9,10 @@ permalink: /attach-chat-data/
 # {{ page.title }}
 
 This is a working illustration of what using data attributes within
-the target div would look like.
+the target div could look like.
 
-When this is implemented, all of the data attributes will contain
-only dashes as separators. Eg: `data-room-url`.
+This contains a little snippet of code that translates `data-room-url` into
+`room:url`.
 
 {% capture text-capture %}
 ```html
@@ -20,12 +20,12 @@ only dashes as separators. Eg: `data-room-url`.
   <div style="height: 60vh"
     class="attach-chat"
     data-api-key="{{api_key}}"
-    data-room:url="{{room_url}}"
-    data-chat:viewer-background-color="#20B2AA"
-    data-chat:editor-background-color="orangeRed"
-    data-participants:avatar-border-radius="square"
-    data-user:username="Charlotte"
-    data-user:avatar="https://avatars.attach.live/avatar11.png"
+    data-room-url="{{room_url}}"
+    data-chat-viewer-background-color="#20B2AA"
+    data-chat-editor-background-color="orangeRed"
+    data-participants-avatar-border-radius="square"
+    data-user-username="Charlotte"
+    data-user-avatar="https://avatars.attach.live/avatar11.png"
   />
 </div>
 
@@ -33,14 +33,26 @@ only dashes as separators. Eg: `data-room-url`.
 
 <script>
   function attach_setup() {
-    var boxes = Array.from(document.getElementsByClassName('attach-videocall'))
-        .concat(Array.from(document.getElementsByClassName('attach-chat')));
-    boxes.forEach(function(box) {
-      var attrs = box.attributes;
+    var tops = 'user room participants videocall chat overlay'.split(' ');
+    var divs = Array.from(document.getElementsByClassName('attach-videocall'))
+       .concat(Array.from(document.getElementsByClassName('attach-chat')));
+    divs.forEach(function(div) {
+      var attrs = div.attributes;
       for (var ii = 0; ii < attrs.length; ii++) {
         var attr = attrs.item(ii);
         if (attr.name.substr(0, 5) != 'data-') continue;
-        var name = 'attach:' + attr.name.substring(5);
+
+        // Translate data-room-url to attach:room:url
+        var name = attr.name.substring(5);
+        for (var jj = 0; jj < tops.length; jj++) {
+          var top = tops[jj];
+          if (name.substring(0, top.length + 1) == (top + '-')) {
+            name = top + ':' + name.substring(top.length + 1);
+            break;
+          }
+        }
+        var name = 'attach:' + name;
+
         var meta = document.createElement('meta');
         meta.setAttribute('property', name);
         meta.content = attr.value;
@@ -62,12 +74,12 @@ only dashes as separators. Eg: `data-room-url`.
   <div style="height: 60vh"
     class="attach-chat"
     data-api-key="{{api_key}}"
-    data-room:url="{{room_url}}"
-    data-chat:viewer-background-color="#20B2AA"
-    data-chat:editor-background-color="orangeRed"
-    data-participants:avatar-border-radius="square"
-    data-user:username="Charlotte"
-    data-user:avatar="https://avatars.attach.live/avatar11.png"
+    data-room-url="{{room_url}}"
+    data-chat-viewer-background-color="#20B2AA"
+    data-chat-editor-background-color="orangeRed"
+    data-participants-avatar-border-radius="square"
+    data-user-username="Charlotte"
+    data-user-avatar="https://avatars.attach.live/avatar11.png"
   />
 </div>
 
@@ -75,14 +87,26 @@ only dashes as separators. Eg: `data-room-url`.
 
 <script>
   function attach_setup() {
-    var boxes = Array.from(document.getElementsByClassName('attach-videocall'))
-        .concat(Array.from(document.getElementsByClassName('attach-chat')));
-    boxes.forEach(function(box) {
-      var attrs = box.attributes;
+    var tops = 'user room participants videocall chat overlay'.split(' ');
+    var divs = Array.from(document.getElementsByClassName('attach-videocall'))
+       .concat(Array.from(document.getElementsByClassName('attach-chat')));
+    divs.forEach(function(div) {
+      var attrs = div.attributes;
       for (var ii = 0; ii < attrs.length; ii++) {
         var attr = attrs.item(ii);
         if (attr.name.substr(0, 5) != 'data-') continue;
-        var name = 'attach:' + attr.name.substring(5);
+
+        // Translate data-room-url to attach:room:url
+        var name = attr.name.substring(5);
+        for (var jj = 0; jj < tops.length; jj++) {
+          var top = tops[jj];
+          if (name.substring(0, top.length + 1) == (top + '-')) {
+            name = top + ':' + name.substring(top.length + 1);
+            break;
+          }
+        }
+        var name = 'attach:' + name;
+
         var meta = document.createElement('meta');
         meta.setAttribute('property', name);
         meta.content = attr.value;
