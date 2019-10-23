@@ -1,9 +1,5 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
-
-# production
-/_site
-
-/.sass-cache
-
-# misc
-.DS_Store
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
