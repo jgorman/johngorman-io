@@ -19,7 +19,7 @@ attempting to focus while sleeping.
 
 <br>
 <iframe
-  style="width: 600px; height: 200px; border: none"
+  style="max-width: 600px; width: 100%; height: 200px; border: none"
   src="https://johngorman.io/darkest-night-clock/run/"
 ></iframe>
 <br>
@@ -31,7 +31,7 @@ You can embed this clock in any page by dropping this code in.
 
 ```html
 <iframe
-  style="width: 600px; height: 200px; border: none"
+  style="max-width: 600px; width: 100%; height: 200px; border: none"
   src="https://johngorman.io/darkest-night-clock/run/"
 ></iframe>
 ```
