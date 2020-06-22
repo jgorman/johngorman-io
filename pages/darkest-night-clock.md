@@ -11,17 +11,36 @@ permalink: /darkest-night-clock/
 
 A very dimmable night clock web written in both React.js and React Native.
 
-You can make the clock display quite dim in order to be readable at night without adding much illumination to the room. Studies have shown that ambient light at night can reduce sleep quality and can also lead to nearsightedness due to the eyes constantly attempting to focus while sleeping.
+You can make the clock display quite dim in order to be readable
+at night without adding much illumination to the room. Studies
+have shown that ambient light at night can reduce sleep quality
+and can also lead to nearsightedness due to the eyes constantly
+attempting to focus while sleeping.
 
-Check out the web app version __[Live demo](/darkest-night-clock/run)__
+<br>
+<iframe
+  style="width: 600px; height: 200px; border: none"
+  src="https://johngorman.io/darkest-night-clock/run/"
+></iframe>
+<br>
 
-I have submitted this to the Apple App Store and I am awaiting
-their response.
+Click the clock time above to control color, brightness, seconds
+and date display.
 
-Install on your __[Android Phone](/darkest-night-clock.apk)__.
-I haven't submitted this to the Google Play Store because it
-still shows the white Android __[Back Home Running]__ nav bar
-at the bottom. It is not dark enough yet.
+You can embed this clock in any page by dropping this code in.
+
+```html
+<iframe
+  style="width: 600px; height: 200px; border: none"
+  src="https://johngorman.io/darkest-night-clock/run/"
+></iframe>
+```
+
+Here is the
+<a href="https://johngorman.io/darkest-night-clock/run/" target="_blank">
+full page</a> version.
+
+Install on your [Android Phone](/darkest-night-clock.apk).
 
 ## Controls
 
@@ -35,7 +54,7 @@ at the bottom. It is not dark enough yet.
 
 ## Technical Details
 
-- Written in React.js and React Native with Redux state management.
+- Written in React.js and React Native with useReducer state management.
 - The source code for Android and iOS:
    [Darkest Night Clock - React Native](https://github.com/jgorman/darkest-night-clock-react-native)
 - The source code for the web app:
@@ -45,5 +64,3 @@ at the bottom. It is not dark enough yet.
   - The appstate.js Redux reducer file is identical.
 - A great way to see exactly how React.js and React Native differ.
 - Both projects store the app preferences state between sessions.
-
-Let me know if you have any comments or suggestions!
